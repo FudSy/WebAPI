@@ -14,5 +14,6 @@ func init(){
 func main() {
 	r := gin.Default()
 	r.POST("/api/Authentication/SignUp", auth.SignUp)
+	r.POST("/api/Authentication/SignIn", auth.SignIn)
 	r.Run()
 }

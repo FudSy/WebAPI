@@ -11,8 +11,6 @@ type User struct {
 	Role string `json:"role"`
 }
 type UserData struct {
-	LastName string `json:"lastName"`
-	FirstName string `json:"firstName"`
 	UserName string `json:"username" gorm:"unique"`
 	Password string `json:"password"`
 }
