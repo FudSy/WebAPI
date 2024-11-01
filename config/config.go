@@ -9,7 +9,7 @@ import (
 	"gorm.io/gorm"
 )
 
-
+var DB *gorm.DB
 func Initialize() {
 	// initializing .env file
 	err := godotenv.Load()
